@@ -13,6 +13,9 @@ name: Promote main to stable
 # org-maintained, and shared with the other image repos (see issues #235/#237).
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Default daily promotion window. Fork owners may change this cadence.
     - cron: "0 4 * * *"
